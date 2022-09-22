@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mecanografía</title>
+  </head>
+
+  <body>
+    <div class="lienzo">
+      <div class="cabecera">
+        <p>
+          MECANOGRAFÍA - Equipo
+          <span class="equipo" id="equipo">
+            <!-- JS modifica el nombre del equipo  -->
+          </span>
+        </p>
+      </div>
+
+      <div class="panel">
+        <div class="panel__controles">
+          <button class="cambio" id="comienzo">Comenzar</button>
+          <button class="cambio" id="detencion">Detener</button>
+        </div>
+
+        <div class="panel__marcador">
+          <!-- JS modifica los valores de tiempo y puntos -->
+          <p>Tiempo (sgs): <span class="dato-numerico" id="tiempo">0</span></p>
+          <p>
+            Palabras correctas:
+            <span class="dato-numerico" id="palabrasCorrectas">0</span>
+          </p>
+        </div>
+
+        <div class="panel__palabra-de-muestra">
+          <p>Teclee la siguiente palabra</p>
+          <!-- JS modifica la palabra -->
+          <p class="palabra" id="palabraDeMuestra">nuez</p>
+        </div>
+
+        <div class="panel__entrada">
+          <input
+            type="text"
+            id="entrada"
+            autocomplete="off"
+            placeholder="Escriba la palabra"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

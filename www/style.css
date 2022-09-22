@@ -1,0 +1,93 @@
+/**********************************************************************/
+/*  PROYECTO MECANOGRAFIA        */
+/*  EQUIPO XXXX                 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --color-fondo: hsl(69, 42%, 94%);
+  --color-primario: hsl(0, 0%, 0%);
+  --color-primario-claro: hsl(0, 0%, 50%);
+  --color-primario-muy-claro: hsl(0, 0%, 80%);
+  --color-sobre-primario: hsl(2, 100%, 100%);
+  --color-secundario: hsl(2, 50%, 102%);
+  --color-sobre-secundario: hsl(2, 0%, 0%);
+
+  --fuente-primaria: sans-serif;
+  --fuente-secuendaria: serif;
+}
+
+/* ************************************ */
+
+.lienzo {
+  height: 100vh;
+  background-color: var(--color-fondo);
+}
+
+/* ************************************ */
+
+.cabecera {
+  padding: 0.5em 2em;
+
+  background-color: var(--color-primario);
+  color: var(--color-sobre-primario);
+
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* ************************************ */
+
+.panel {
+  width: clamp(500px, 90%, 800px);
+  background-color: var(--color-primario-muy-claro);
+}
+
+/* ************************************ */
+
+.panel__controles {
+  width: 100%;
+  background-color: var(--color-primario-claro);
+}
+
+.cambio {
+  background-color: var(--color-secundario);
+  /* Modifica el aspecto del cursor para indicar que es un botón */
+  cursor: pointer;
+}
+
+/* ************************************ */
+.panel__marcador {
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+.dato-numerico {
+  display: inline-block;
+  background-color: var(--color-primario);
+  color: var(--color-sobre-primario);
+}
+
+/* ************************************ */
+.panel__palabra-de-muestra {
+  width: 70%;
+  background-color: var(--color-primario);
+  color: var(--color-sobre-primario);
+}
+
+.palabra {
+  width: 33%;
+  background-color: var(--color-secundario);
+  color: var(--color-sobre-secundario);
+}
+
+/* ************************************ */
+.panel__entrada {
+  width: 60%;
+}
